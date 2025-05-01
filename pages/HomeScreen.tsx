@@ -70,9 +70,10 @@ export default function App() {
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
           <View style={{ marginVertical: 5 }}>
-            <Text>{item.date} - {item.title}: {item.amount.toLocaleString()}원 ({item.category})</Text>
+            <Text>{item.date} - {item.title}: {item.amount.toLocaleString()}원 ({item.category})</Text> 
           </View>
         )}
+        //에러나는 이유를 모르겠음
       />
     </View>
   );
